@@ -10,7 +10,7 @@
   }
 }
 
-@mixin mobile {
+@mixin small-tablet {
   @media (max-width: (768px)) {
     @content;
   }

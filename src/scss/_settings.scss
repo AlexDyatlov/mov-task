@@ -10,8 +10,16 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  background-color: $color-white;
+  pointer-events: none;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $color-indigo;
+    cursor: pointer;
+  }
 }
 
 img {
@@ -46,12 +54,6 @@ button {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
